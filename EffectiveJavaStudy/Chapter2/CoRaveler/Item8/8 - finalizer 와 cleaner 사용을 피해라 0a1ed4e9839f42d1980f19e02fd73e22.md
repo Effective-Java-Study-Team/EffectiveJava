@@ -244,7 +244,7 @@ public class ManagedFile implements AutoCloseable {
         
         ### 왜 내부 클래스인 State 가 필요한가?
         
-        ![스크린샷 2023-07-28 오후 7.37.14.png](8%20-%20finalizer%20%E1%84%8B%E1%85%AA%20cleaner%20%E1%84%89%E1%85%A1%E1%84%8B%E1%85%AD%E1%86%BC%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%91%E1%85%B5%E1%84%92%E1%85%A2%E1%84%85%E1%85%A1%200a1ed4e9839f42d1980f19e02fd73e22/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-07-28_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_7.37.14.png)
+        ![Cleanable_register](https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/b7cccaf1e5667e9743e78524974e8b8fb72298f7/EffectiveJavaStudy/Chapter2/CoRaveler/pictures/Cleanable_register.png?raw=true)
         
         Cleaner를 사용하려면 Cleaner에 등록될 때 실행할 "청소 작업"을 정의해야 합니다. 
         
