@@ -1,2 +1,4 @@
-package CoRaveler.Item2;public class Main {
+package CoRaveler.Item2;
+
+public class Main {
 }

@@ -11,6 +11,9 @@ public class tryFinallyBothError {
             System.out.println(e);
             System.out.println("e.getSuppressed() = " + Arrays.toString(e.getSuppressed()));
         }
+//        finally {
+//            br.close();   // 이건 안됨, try-with-resources 문법에 없다.
+//        }
     }
 
     static class FaultyBufferedReader extends BufferedReader {

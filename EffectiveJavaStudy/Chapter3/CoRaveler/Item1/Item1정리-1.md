@@ -199,7 +199,10 @@ contains 메서드의 결과물 역시 또한 신뢰하지 못할 결과값을 �
 
    하지만 java.util.Date 의 equals 메서드는 MyDate 와는 다르게
    밀리 세컨드까지 같아야 true 를 return 합니다
-   (Date equals 코드)
+
+   
+
+   
 
    
 
