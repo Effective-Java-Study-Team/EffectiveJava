@@ -1,9 +1,8 @@
-package CoRaveler.Item1;
+package CoRaveler.Item10;
 
 import java.util.HashSet;
 import java.util.LinkedHashSet;
 import java.util.Set;
-import java.util.Collections;
 
 public class SetEqualsTest {
     public static void main(String[] args) {

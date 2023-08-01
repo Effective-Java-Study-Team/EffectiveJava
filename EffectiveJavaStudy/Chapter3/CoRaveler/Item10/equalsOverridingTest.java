@@ -1,4 +1,4 @@
-package CoRaveler.Item1;
+package CoRaveler.Item10;
 
 public class equalsOverridingTest {
     public static void main(String[] args) {
