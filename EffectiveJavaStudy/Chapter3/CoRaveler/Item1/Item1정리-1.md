@@ -80,7 +80,7 @@ class MyPoint {
 ### 그럼 일반 규약이 뭔데?
 
 다음은 Object 의 javadoc 에 나온 일반 규약이다
-(사진)
+<img src="https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/Object%EC%9D%BC%EB%B0%98%EA%B7%9C%EC%95%BDjavadoc.jpeg?raw=true" style="zoom:50%;" />
 
 1. **반사성(reflexivity)**
    - null 이 아닌 모든 참조 값 x 에 대해, x.equals(x) == true
@@ -96,10 +96,10 @@ class MyPoint {
 5. **null-아님 (이 항목은 정확한 명칭이 없다)**
    - null 이 아닌 모든 참조 값 x 에 대해, x.equals(null) == false 이다.
 
-(갈 짤)
+<img src="https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/%EA%BE%B8%EC%A7%96%EC%9D%84%EA%B0%88.jpeg?raw=true" style="zoom:33%;" />
 
 뭐 이리 규약이 많고 실제로 지키기나 하나? 라는 생각이 든다면 정상입니다.
-(사실 필자의 생각)
+~~(사실 필자의 생각)~~
 너무 많기도 하고, 일단은 각각이 뭔지 자세히 알기보다는 `왜` 필요한지에 대해 알아볼까요?
 
 하지만 위 규약들을 지켜야 하는 이유는 String, 여러 Collection 과 클래스들은
@@ -107,7 +107,7 @@ class MyPoint {
 
 ### 먼저 내부 코드로 보는 일반 규약을 지켜야 하는 이유를 보자
 
-(사진)
+<img src="https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/ArrayListContains.jpeg?raw=true" style="zoom:30%;" />
 
 위 코드는 ArrayList 의 contains 내부 코드이다.
 
@@ -200,10 +200,21 @@ contains 메서드의 결과물 역시 또한 신뢰하지 못할 결과값을 �
    하지만 java.util.Date 의 equals 메서드는 MyDate 와는 다르게
    밀리 세컨드까지 같아야 true 를 return 합니다
 
-   
+   ![](https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/DateEquals.png?raw=true)
+   Date 의 인스턴스여야 하고, getTime() 값이 같아야 하는 것이
+   Date 의 equals 조건입니다
 
-   
+   ![](https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/Date_getTimeImpl.png?raw=true)
+   getTime 메서드는 getTimeImpl 의 리턴값을 반환하고,
+   getTimeImpl 메서드는 fastTime 필드값을 반환합니다.
 
-   
+   ![](https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/Date_fastTime.png?raw=true)
+   fastTime 은 Date 클래스의 long 타입 필드값이고
+   해당 필드값은 
+   ![](https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item1/pictures/Date_Constructor.png?raw=true)
+   생성자에서 초기화 되는 데, 이때 밀리세컨드의 값을 할당받는 것을 볼 수 있습니다.
+
+   즉, MyDate 는 연,월,일만 따지지만 java.util.Date 는 밀리세컨드까 따지기 때문에
+   MyDate 클래스의 equals 오버라이딩은 **대칭성**을 어긴 거라고 볼 수 있습니다!
 
 여기까지 길이 길어져, 다음 글에서 이어서 작성하겠습니다!
