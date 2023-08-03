@@ -5,15 +5,15 @@ import java.util.concurrent.atomic.AtomicInteger;
 
 public class PointTest {
     public static void main(String[] args) {
-        // ColorPoint, SmellPoint 의 stackOverFlow
-//        ColorPoint cp = new ColorPoint(1, 2, Color.RED);
-//        SmellPoint sp = new SmellPoint(1, 2, "stink");
-//
-//        cp.equals(sp);
+//         ColorPoint, SmellPoint 의 stackOverFlow
+        ColorPoint cp = new ColorPoint(1, 2, Color.RED);
+        SmellPoint sp = new SmellPoint(1, 2, "stink");
+
+        cp.equals(sp);
 
         // onUnitCircle 문제
-        CounterPoint counterPoint = new CounterPoint(0, 1);
-        System.out.println("Point.onUnitCircle(counterPoint) = " + Point.onUnitCircle(counterPoint));
+//        CounterPoint counterPoint = new CounterPoint(0, 1);
+//        System.out.println("Point.onUnitCircle(counterPoint) = " + Point.onUnitCircle(counterPoint));
     }
 }
 
