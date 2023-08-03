@@ -22,7 +22,10 @@ public class Wallet {
 
     @Override
     public int hashCode() {
+        // 1. result 값을 객체의 핵심 필드 중 첫 번째 필드를 Type.hashCode(f) 로 초기화한다.
         int result = Integer.hashCode(money);
+
+        // 2. 그 다음 필드부터 result = 31 * result + Type.hashCode(f) 로 재대입 한다.
         result = 31 * result + owner.hashCode();
 
         /*

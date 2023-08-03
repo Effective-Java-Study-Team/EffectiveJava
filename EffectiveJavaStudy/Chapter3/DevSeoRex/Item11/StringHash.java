@@ -7,14 +7,14 @@ public class StringHash {
 
 
         // 곱셈 없이 String의 hashCode를 구현한다면 모든 아나그램의 해시코드가 같아진다.
-        System.out.println(hashCode(word1));
-        System.out.println(hashCode(word2));
+        System.out.println(hashCode(word1)); // 530
+        System.out.println(hashCode(word2)); // 530
 
         System.out.println();
 
         // 곱셈 연산을 통한 HashCode 도출이 충돌을 막는다.
-        System.out.println(multiplyHashcode(word1));
-        System.out.println(multiplyHashcode(word2));
+        System.out.println(multiplyHashcode(word1)); // 93029210
+        System.out.println(multiplyHashcode(word2)); // 96723290
     }
 
     static int hashCode(String s) {
@@ -41,4 +41,6 @@ public class StringHash {
 
         return result;
     }
+
 }
+

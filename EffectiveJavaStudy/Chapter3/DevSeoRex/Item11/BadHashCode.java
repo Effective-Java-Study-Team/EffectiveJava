@@ -22,3 +22,5 @@ public class BadHashCode {
         return 45;
     }
 }
+
+

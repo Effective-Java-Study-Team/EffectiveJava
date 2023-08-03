@@ -10,8 +10,8 @@ public class NotOverrideHashCode {
         System.out.println("student1.hashCode() == student2.hashCode() ? " + (student1.hashCode() == student2.hashCode()));
 
         // 해시코드가 다르다.
-        System.out.println(student1.hashCode());
-        System.out.println(student2.hashCode());
+        System.out.println(student1.hashCode()); // 804564176
+        System.out.println(student2.hashCode()); // 1421795058
 
         HashMap<Student, String> map = new HashMap<>();
         map.put(student1, "REX");
