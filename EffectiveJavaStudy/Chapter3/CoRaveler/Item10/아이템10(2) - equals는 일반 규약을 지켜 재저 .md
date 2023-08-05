@@ -108,7 +108,7 @@ cp.equals(sp);
 
 를 실행하게 되면 다음과 같은 결과를 얻게 된다
 
-![스크린샷 2023-08-02 오후 7.12.31.png](%E1%84%8B%E1%85%A1%E1%84%8B%E1%85%B5%E1%84%90%E1%85%A6%E1%86%B710(2)%20-%20equals%E1%84%82%E1%85%B3%E1%86%AB%20%E1%84%8B%E1%85%B5%E1%86%AF%E1%84%87%E1%85%A1%E1%86%AB%20%E1%84%80%E1%85%B2%E1%84%8B%E1%85%A3%E1%86%A8%E1%84%8B%E1%85%B3%E1%86%AF%20%E1%84%8C%E1%85%B5%E1%84%8F%E1%85%A7%20%E1%84%8C%E1%85%A2%E1%84%8C%E1%85%A5%20cb31b9e6f89840f88400e9bffe2e730a/%25E1%2584%2589%25E1%2585%25B3%25E1%2584%258F%25E1%2585%25B3%25E1%2584%2585%25E1%2585%25B5%25E1%2586%25AB%25E1%2584%2589%25E1%2585%25A3%25E1%2586%25BA_2023-08-02_%25E1%2584%258B%25E1%2585%25A9%25E1%2584%2592%25E1%2585%25AE_7.12.31.png)
+![스크린샷 2023-08-02 오후 7.12.31.png](https://github.com/Effective-Java-Study-Team/EffectiveJava/blob/main/EffectiveJavaStudy/Chapter3/CoRaveler/Item10/pictures/equalsStackOverFlow.png?raw=true)
 
 ```java
 	if(!(o instanceof ColorPoint)) //  cp.equals(sp), 
