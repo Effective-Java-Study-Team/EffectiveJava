@@ -1,7 +1,5 @@
 package CH2.Item8;
 
-import jdk.jfr.StackTrace;
-
 import java.lang.ref.Cleaner;
 
 public class Room implements AutoCloseable {
