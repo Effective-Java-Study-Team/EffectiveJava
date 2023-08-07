@@ -18,7 +18,7 @@
       ![image](https://github.com/Effective-Java-Study-Team/EffectiveJava/assets/91787050/07cbd4ea-094f-4620-8ac7-08eb3adf8fb5)
 
       이 코드를 실행하면 apple은 단 한번 생성되고 String Constant Pool에 이미 apple 이란 값이 있으므로<br>
-      이 반복문이 약 21만번 정도 반복하게 되는데 apple을 저장하기 위한 String 인스턴스는 단 한번 생성된다.
+      이 반복문이 약 21억번 정도 반복하게 되는데 apple을 저장하기 위한 String 인스턴스는 단 한번 생성된다.
 
       ```java
       for (int i=0; i<INTEGER.MAX_VALUE; i++) {
@@ -27,7 +27,7 @@
       ```
 
       이 코드를 실행하면 반복하는 회수만큼 String의 객체가 생성되게 된다.<br>
-      즉 Integer의 최대 표현값인 **약 21만개 이상의 String 인스턴스가 생성**되게 되는것이다.
+      즉 Integer의 최대 표현값인 **약 21억개 이상의 String 인스턴스가 생성**되게 되는것이다.
 
       ```java
       for (int i=0; i<INTEGER.MAX_VALUE; i++) {
