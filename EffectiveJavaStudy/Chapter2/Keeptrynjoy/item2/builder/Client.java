@@ -1,4 +1,4 @@
-package com.example.ch2.item2.builder;
+package Chapter2.Keeptrynjoy.item2.builder;
 
 public class Client {
     public void clientMethod(){

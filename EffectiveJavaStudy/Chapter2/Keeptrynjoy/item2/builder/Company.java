@@ -1,6 +1,6 @@
-package com.example.ch2.item2.builder;
+package Chapter2.Keeptrynjoy.item2.builder;
 
-import lombok.val;
+//import lombok.val;
 
 /**
 * 빌더 패턴
