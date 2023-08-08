@@ -1,6 +1,6 @@
 # ITEM 3. "private 생성자나 열거 타입으로 싱글턴임을 보증하라."
 
-## 싱글턴(singleton)이란?
+## 싱글턴(singleton) 클래스란?
 - 인스턴스를 오직 하나만 생성할 수 있는 클래스를 뜻 한다.
 - 무상태(stateless) 객체나 시스템 설계상 유일해야하는 시스템 컴포넌트를 예로 들 수 있다. <br/>
   (데이터베이스 연결, 네트워크 연결 등)
@@ -85,16 +85,21 @@ public class Apple {
           UnaryOperator<String> sameString = identityFunction();
               
           for (String s : strings)
-          System.out.println(sameString.apply(s));
+               System.out.println(sameString.apply(s));
  
                    
           Number[] numbers = { 1, 2.0, 3L };
           UnaryOperator<Number> sameNumber = identityFunction();
               
-          for (Number n : numbers)
-          System.out.println(sameNumber.apply(n));
+          for (Number n : numbers){
+               System.out.println(sameNumber.apply(n));
+          }
+      
+          System.out.println("sameString.equals(sameNumber) : "+ sameString.equals(sameNumber));
       }
       ```
+      ![img.png](img.png)
+    
       참고 : [[이펙티브 자바] 제네릭 Item30 - 이왕이면 제네릭 메서드로 만들어라](https://velog.io/@holidenty/이펙티브-자바-제네릭-Item29-이왕이면-제네릭-타입으로-만들어라)         
 
 <br/>
@@ -123,10 +128,19 @@ public class Apple {
 
 - 두 가지 방식 중 하나만으로 만들어진 싱글턴 클래스를 직렬화하려면 Serializable을 구현한다고 선언하는 것만으로 부족하다. 직렬화된 인스턴스를 역직렬화할 때마다 새로운 인스턴스가 만들어진다.
 
-  → `readResolve()`메서드를 제공해서 역직렬화 과정에서 만들어진 '가짜 인스턴스'를 대신하여 기존에 생성된 '진짜 인스턴스'를 반환하도록 하면 싱글턴이 보장된다.
+  <br/>
 
+  → `readResolve()`메서드를 제공해서 역직렬화 과정에서 만들어진 '가짜 인스턴스'를 대신하여 기존에 생성된 '진짜 인스턴스'를 반환하도록 하면 싱글턴이 보장된다.
+  
+  ```java
+	 private Object readResolve() {
+		   return INSTANCE;
+	 }
+  ```
+  <br/>
+  
   추가 참고 : [자바 직렬화: readResolve와 writeReplace](https://madplay.github.io/post/what-is-readresolve-method-and-writereplace-method)
-  > 직렬화(Serialization)란?
+  > **직렬화(Serialization)란?**
   > <br/>
   > : 객체를 데이터 스트림으로 만드는 것을 뜻한다. 다시 얘기하면 객체에 저장된 데이터를 스트림에
   >  쓰기(write)위해 연속적인(serial) 데이터로 변환하는 것을 말한다. 반대로 스트림으로부터
