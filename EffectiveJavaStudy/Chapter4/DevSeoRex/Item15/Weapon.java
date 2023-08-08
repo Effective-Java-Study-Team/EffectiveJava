@@ -1,0 +1,4 @@
+interface Weapon {
+
+    void attack();
+}
