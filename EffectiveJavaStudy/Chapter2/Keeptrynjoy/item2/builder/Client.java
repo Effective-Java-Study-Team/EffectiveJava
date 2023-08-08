@@ -1,4 +1,4 @@
-package item2.builder;
+package com.example.ch2.item2.builder;
 
 public class Client {
     public void clientMethod(){

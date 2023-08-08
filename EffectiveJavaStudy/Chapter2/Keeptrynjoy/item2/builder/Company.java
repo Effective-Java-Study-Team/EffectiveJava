@@ -1,5 +1,6 @@
-package item2.builder;
+package com.example.ch2.item2.builder;
 
+import lombok.val;
 
 /**
 * 빌더 패턴

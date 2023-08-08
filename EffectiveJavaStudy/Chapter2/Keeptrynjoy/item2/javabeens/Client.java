@@ -1,4 +1,4 @@
-package item2.javabeens;
+package com.example.ch2.item2.javabeens;
 
 public class Client {
     public void clientMethod(){
