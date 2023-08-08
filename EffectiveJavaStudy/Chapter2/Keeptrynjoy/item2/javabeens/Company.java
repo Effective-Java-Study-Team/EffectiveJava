@@ -1,4 +1,4 @@
-package com.example.ch2.item2.javabeens;
+package item2.javabeens;
 
 /**
 * 자바빈즈 패턴
