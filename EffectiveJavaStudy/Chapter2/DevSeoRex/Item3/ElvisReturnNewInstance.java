@@ -1,4 +1,4 @@
-package ch2.item3;
+package ch2.Item3;
 
 public class ElvisReturnNewInstance {
 

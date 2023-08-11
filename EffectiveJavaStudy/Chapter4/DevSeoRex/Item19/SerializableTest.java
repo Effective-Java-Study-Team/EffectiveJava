@@ -1,11 +1,19 @@
-package ch2.Item3;;
+import java.io.ByteArrayInputStream;
+import java.io.ByteArrayOutputStream;
+import java.io.ObjectInputStream;
+import java.io.ObjectOutputStream;
 
-import java.io.*;
+public class SerializableTest {
 
-public class SerializationUtils {
+    public static void main(String[] args) {
+        D d = new D(30, 40, 50);
+        byte[] serializedD = serialize(d);
 
-    private SerializationUtils() {}
+        D deserializedD = (D) deserialize(serializedD);
 
+        System.out.println(d);
+        System.out.println(deserializedD);
+    }
 
     public static byte[] serialize(Object instance) {
         ByteArrayOutputStream bos = new ByteArrayOutputStream();
@@ -30,4 +38,3 @@ public class SerializationUtils {
         return null;
     }
 }
-
