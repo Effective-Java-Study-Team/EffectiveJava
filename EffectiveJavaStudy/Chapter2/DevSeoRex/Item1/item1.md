@@ -121,7 +121,7 @@
     MyDriver 클래스를 로딩하고, url 패턴이 MyDriver와 일치할때만 Connection을 반환하도록 코드를 작성한 뒤 테스트 하면 아래와 같다.
 
     ```java
-    public class Main {
+    public class EqualsMain {
 
     public static void main(String[] args) throws ClassNotFoundException {
         Class.forName("com.adoptpet.server.adopt.controller.MyDriver");
@@ -138,7 +138,7 @@
     ![image](https://github.com/ch4570/file-block-extension/assets/91787050/3dd5463d-8bea-41d8-8cb8-7f50268bb19d)
     만약 다른 벤더사의 드라이버를 추가한다고 해도 결과에는 변함이 없다.
     ```java
-   public class Main {
+   public class EqualsMain {
 
     public static void main(String[] args) throws ClassNotFoundException {
           Class.forName("com.adoptpet.server.adopt.controller.MyDriver");

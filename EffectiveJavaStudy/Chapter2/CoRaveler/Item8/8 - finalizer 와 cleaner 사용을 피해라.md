@@ -192,7 +192,7 @@ public class ManagedFile implements AutoCloseable {
         이렇게 구현을 해놓은 경우, 가져다 쓸 때는 아래처럼 사용하면 된다.
         
         ```java
-        public class Main {
+        public class EqualsMain {
             public static void main(String[] args) {
                 FileManager fileManager = new FileManager("path_to_your_file")
                 // 파일을 사용하는 코드...
@@ -284,7 +284,7 @@ public class ManagedFile implements AutoCloseable {
         GC 대상이 될 때 State의 run 메서드가 호출됩니다.
         
         ```java
-        public class Main {
+        public class EqualsMain {
             public static void main(String[] args) {
                 FileManager fileManager = new FileManager("path_to_your_file");
                 // 파일을 사용하는 코드...
