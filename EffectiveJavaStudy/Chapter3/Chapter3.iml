@@ -5,8 +5,12 @@
     <content url="file://$MODULE_DIR$">
       <sourceFolder url="file://$MODULE_DIR$/DevSeoRex/Item10" isTestSource="false" />
       <sourceFolder url="file://$MODULE_DIR$/src" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DevSeoRex/Item11" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DevSeoRex/Item12" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DevSeoRex/Item13" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/DevSeoRex/Item14" isTestSource="false" />
     </content>
-    <orderEntry type="jdk" jdkName="11" jdkType="JavaSDK" />
+    <orderEntry type="jdk" jdkName="azul-17" jdkType="JavaSDK" />
     <orderEntry type="sourceFolder" forTests="false" />
   </component>
 </module>

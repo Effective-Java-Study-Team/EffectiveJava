@@ -5,3 +5,4 @@ public class NonEncapsulation {
     public int x;
     public int y;
 }
+
