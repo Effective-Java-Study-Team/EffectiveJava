@@ -1,4 +1,6 @@
-public class A implements Cloneable {
+package DevSeoRex.Item19;
+
+class A implements Cloneable {
 
     int x;
     int y;

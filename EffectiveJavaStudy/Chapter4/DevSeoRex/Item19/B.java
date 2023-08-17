@@ -1,4 +1,6 @@
-public class B extends A{
+package DevSeoRex.Item19;
+
+class B extends A{
 
     int j;
 
