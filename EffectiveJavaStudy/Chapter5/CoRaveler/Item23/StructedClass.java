@@ -5,6 +5,7 @@ public class StructedClass {
 }
 
 abstract class Shape {
+    int x, y;
     abstract double area();
 }
 

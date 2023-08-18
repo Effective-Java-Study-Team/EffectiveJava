@@ -6,6 +6,8 @@ public class TaggedFigure {
     // 태그 필드
     final Shape shape;
 
+    int x, y; // 중심 좌표값
+
     double length;
     double width;
 
@@ -22,6 +24,10 @@ public class TaggedFigure {
         shape = Shape.RECTANGLE;
         this.width = width;
         this.length = length;
+    }
+
+    void printShape() {
+        System.out.println(shape);
     }
 
     double area() {
