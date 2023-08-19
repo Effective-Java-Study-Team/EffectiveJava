@@ -1,3 +1,5 @@
+package DevSeoRex.Item24;
+
 public class AnonymousTest {
 
     int k = 10;

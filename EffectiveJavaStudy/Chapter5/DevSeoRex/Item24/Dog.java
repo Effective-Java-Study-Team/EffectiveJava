@@ -1,4 +1,6 @@
-public abstract class Dog extends Animal {
+package DevSeoRex.Item24;
+
+public abstract class Dog extends mixin.Animal {
 
     int money = 2000;
 
