@@ -1,7 +1,5 @@
 package CoRaveler.Item24;
 
-import java.util.Optional;
-
 public class Example {
     public static void main(String[] args) {
         Animal a = new Animal() {
