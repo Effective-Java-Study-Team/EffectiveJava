@@ -8,7 +8,7 @@ public class WildcardCapture {
         swapHelper(list, 0, 1);
     }
 
-    private static <T> void swapHelper(List<T> list, int i, int j) {
+    private static <T> void swapHelper(List<T> list, int i, int j) {    // captured!
         T temp = list.get(i);
         list.set(i, list.get(j));
         list.set(j, temp);
