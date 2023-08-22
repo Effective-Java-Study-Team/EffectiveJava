@@ -1,3 +1,5 @@
+package DevSeoRex.Item26;
+
 import java.util.Set;
 
 public class SetTest {
@@ -13,7 +15,7 @@ public class SetTest {
         int result = 0;
         s1.add("22222");
         for (Object o1 : s1) {
-            if (s2.contains(o1)) result ++;
+            if (s2.contains(o1)) result++;
         }
 
         return result;
@@ -24,7 +26,7 @@ public class SetTest {
         // 컴파일 에러
 //        s1.add("111111111");
         for (Object o1 : s1) {
-            if (s2.contains(o1)) result ++;
+            if (s2.contains(o1)) result++;
         }
 
         return result;

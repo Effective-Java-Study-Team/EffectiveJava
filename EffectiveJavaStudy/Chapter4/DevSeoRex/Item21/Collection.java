@@ -1,3 +1,5 @@
+package DevSeoRex.Item21;
+
 public class Collection implements MiniCollection {
     @Override
     public void add() {
