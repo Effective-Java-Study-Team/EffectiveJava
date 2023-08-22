@@ -1,3 +1,5 @@
+package DevSeoRex.Item16;
+
 public class Encapsulation {
 
     private int x;
