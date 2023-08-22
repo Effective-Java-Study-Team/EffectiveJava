@@ -8,6 +8,7 @@ public class AnonymousTest {
             void balk() {
                 System.out.println("k = " + k);
             }
+
         }.balk();
     }
 

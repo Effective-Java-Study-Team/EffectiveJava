@@ -1,6 +1,6 @@
 public class NonStaticMember {
 
-    int a = 20;
+    private int a = 20;
 
     void print() {
         System.out.println("Outer = " + a);
@@ -15,14 +15,23 @@ public class NonStaticMember {
         }
     }
 
-    static class StaticInner {
+    private void beforePrint() {
+        System.out.println("프린트 준비");
+    }
+
+
+    private static class StaticInner {
 
         int a = 30;
 
+        NonStaticMember staticMember = new NonStaticMember();
+
         public void print() {
             System.out.println("Inner = " + a);
+            staticMember.beforePrint();
 //            System.out.println("Outer.a = " + NonStaticMember.this.a); // Compile Error
 
         }
     }
+
 }

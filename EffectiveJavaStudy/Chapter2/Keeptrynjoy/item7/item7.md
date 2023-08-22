@@ -60,10 +60,10 @@ public Object pop() {
     ```java
     public static void main(String[] args) {
     
-            Map<Animal, String> map = new HashMap<>();
+            Map<mixin.Animal, String> map = new HashMap<>();
     
-            Animal tiger = new Animal("tiger");
-            Animal monkey = new Animal("monkey");
+            mixin.Animal tiger = new mixin.Animal("tiger");
+            mixin.Animal monkey = new mixin.Animal("monkey");
     
             map.put(tiger,"호랑이");
             map.put(monkey,"원숭이");
@@ -79,8 +79,8 @@ public Object pop() {
     
     /**
     
-    $Animal@7a81197d=호랑이
-    $Animal@5ca881b5=원숭이
+    $mixin.Animal@7a81197d=호랑이
+    $mixin.Animal@5ca881b5=원숭이
     
     **/
     ```
@@ -88,10 +88,10 @@ public Object pop() {
     - key에 해당하는 객체(tiger)를 null로 초기화 했음에도 엔트리는 그대로 남아 출력되는 것을 확인할 수 있다.
 
     ```java
-    **WeakHashMap**<Animal, String> map = new WeakHashMap<>();
+    **WeakHashMap**<mixin.Animal, String> map = new WeakHashMap<>();
     
-    Animal tiger = new Animal("tiger");
-    Animal monkey = new Animal("monkey");
+    mixin.Animal tiger = new mixin.Animal("tiger");
+    mixin.Animal monkey = new mixin.Animal("monkey");
     
     map.put(tiger,"호랑이");
     map.put(monkey,"원숭이");
@@ -106,7 +106,7 @@ public Object pop() {
     
     /** 
     
-    $Animal@5ca881b5=원숭이
+    $mixin.Animal@5ca881b5=원숭이
     
     **/
     ```

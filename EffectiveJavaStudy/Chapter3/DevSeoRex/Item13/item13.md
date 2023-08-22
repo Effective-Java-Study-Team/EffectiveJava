@@ -374,14 +374,14 @@ Cloneable을 이미 구현한 클래스를 확장한다면 어쩔 수 없이 잘
 
 ```java
 // 복사 생성자
-public Dog(Dog dog) {
+public mixin.Dog(mixin.Dog dog) {
     this.name = dog.getName();
     this.age = dog.getAge();
 }
 
 // 복사 팩터리 메서드
-public static Dog newInstance(Dog dog) {
-    return new Dog(dog.getName(), dog.getAge());
+public static mixin.Dog newInstance(mixin.Dog dog) {
+    return new mixin.Dog(dog.getName(), dog.getAge());
 }
 ```
 

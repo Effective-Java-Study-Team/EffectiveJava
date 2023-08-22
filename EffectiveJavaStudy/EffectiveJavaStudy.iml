@@ -3,9 +3,9 @@
   <component name="NewModuleRootManager" inherit-compiler-output="true">
     <exclude-output />
     <content url="file://$MODULE_DIR$">
-      <sourceFolder url="file://$MODULE_DIR$/CoRaveler" isTestSource="false" packagePrefix="CH2" />
-      <sourceFolder url="file://$MODULE_DIR$/DevSeoRex" isTestSource="false" packagePrefix="ch2" />
-      <sourceFolder url="file://$MODULE_DIR$/Keeptrynjoy" isTestSource="false" packagePrefix="ch2" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter3" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter4" isTestSource="false" />
+      <sourceFolder url="file://$MODULE_DIR$/Chapter5/DevSeoRex/Item24" isTestSource="false" />
     </content>
     <orderEntry type="inheritedJdk" />
     <orderEntry type="sourceFolder" forTests="false" />
