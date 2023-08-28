@@ -3,7 +3,7 @@ package CoRaveler.Item30;
 import java.util.Collection;
 import java.util.Objects;
 
-public class RecursiveGeneric {
+public class RecursiveGenericMax {
     public static <E extends Comparable<E>> E max(Collection<E> c) {
         if (c.isEmpty())
             throw new IllegalStateException("컬렉션 비워있음");

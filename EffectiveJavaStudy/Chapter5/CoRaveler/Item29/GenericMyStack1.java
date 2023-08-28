@@ -33,4 +33,8 @@ public class GenericMyStack1<T> {
         if (elements.length == size)
             elements = Arrays.copyOf(elements, 2 * size + 1);
     }
+
+    public boolean isEmpty() {
+        return size == 0;
+    }
 }
