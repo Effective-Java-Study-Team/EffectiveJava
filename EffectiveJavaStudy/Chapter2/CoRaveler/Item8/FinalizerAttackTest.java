@@ -2,6 +2,7 @@ package CH2.Item8;
 
 public class FinalizerAttackTest {
     public static void main(String[] args) {
+        System.out.println();
         try {
             new VulnerableClass();
         } catch (Exception e) {
