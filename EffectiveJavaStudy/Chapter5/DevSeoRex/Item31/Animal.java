@@ -1,4 +1,4 @@
-public interface Animal extends Comparable<Animal> {
+interface Animal extends Comparable<Animal> {
 
     void walk();
 }

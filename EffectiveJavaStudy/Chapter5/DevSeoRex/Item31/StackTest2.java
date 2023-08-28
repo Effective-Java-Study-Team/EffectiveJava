@@ -17,10 +17,11 @@ public class StackTest2 {
         BeforeRefactorStack<Number> stack3 = new BeforeRefactorStack<>();
         stack3.push(1);
         stack3.push(2);
-        Collection<Object> collection = Collections.emptyList();
+        Collection<Object> collection = new ArrayList<>();
         // java: incompatible types: java.util.Collection<java.lang.Object>
         // cannot be converted to java.util.Collection<java.lang.Number>
 //        stack3.popAll(collection);
+
 
         AfterRefactorStack<Number> stack4 = new AfterRefactorStack<>();
         stack4.push(1);

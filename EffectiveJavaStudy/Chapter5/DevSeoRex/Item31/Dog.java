@@ -1,4 +1,4 @@
-public interface Dog extends Animal {
+interface Dog extends Animal {
 
     void bark();
 }
