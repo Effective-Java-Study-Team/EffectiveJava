@@ -1,3 +1,5 @@
+package DevSeoRex.Item13;
+
 public class HashTable implements Cloneable{
 
     private Entry[] buckets = new Entry[30];

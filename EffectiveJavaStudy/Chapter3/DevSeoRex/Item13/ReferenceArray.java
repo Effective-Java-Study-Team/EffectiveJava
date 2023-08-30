@@ -1,3 +1,6 @@
+package DevSeoRex.Item13;
+
+import java.awt.*;
 import java.util.Arrays;
 
 public class ReferenceArray {
@@ -13,7 +16,6 @@ public class ReferenceArray {
         System.out.println(Arrays.toString(arr1));
         System.out.println(Arrays.toString(arr2));
 
-        p2.setX(30);
         System.out.println();
 
         System.out.println(Arrays.toString(arr1));

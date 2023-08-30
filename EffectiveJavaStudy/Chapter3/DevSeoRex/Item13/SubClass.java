@@ -1,3 +1,6 @@
+package DevSeoRex.Item13;
+
+
 public class SubClass extends ParentClass {
 
     int a;

@@ -1,3 +1,5 @@
+package DevSeoRex.Item13;
+
 public class B extends A {
 
     int b;

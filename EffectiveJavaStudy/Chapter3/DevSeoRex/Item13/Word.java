@@ -1,3 +1,5 @@
+package DevSeoRex.Item13;
+
 public class Word implements Cloneable {
 
     private String word;

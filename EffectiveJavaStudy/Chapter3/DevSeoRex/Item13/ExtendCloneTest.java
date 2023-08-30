@@ -1,3 +1,5 @@
+package DevSeoRex.Item13;
+
 public class ExtendCloneTest {
 
     public static void main(String[] args) throws CloneNotSupportedException {
