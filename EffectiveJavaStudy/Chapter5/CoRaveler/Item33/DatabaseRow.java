@@ -27,11 +27,14 @@ public class DatabaseRow {
 
         Column<String> strCol = new Column<>();
         Column<Integer> intCol = new Column<>();
+        Column col = new Column();
 
         dbRow.putColumn(strCol, "abc");
         dbRow.putColumn(intCol, 42);
+        dbRow.putColumn(col, 42);   // 에외
 
         System.out.println(dbRow.getColumn(strCol));
         System.out.println(dbRow.getColumn(intCol));
+        System.out.println(dbRow.getColumn(col));
     }
 }
